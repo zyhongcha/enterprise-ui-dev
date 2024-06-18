@@ -12,12 +12,9 @@ import { KanbanBoard } from '$lib/kanban-board';
  * toThrowError: https://vitest.dev/api/expect.html#tothrowerror
  */
 
-it.fails(
-  'should pass if the two numbers would add up correctly in a language other than JavaScript',
-  () => {
-    expect(0.2 + 0.1).toBeCloseTo(0.3);
-  },
-);
+it('should pass if the two numbers would add up correctly in a language other than JavaScript', () => {
+  expect(0.2 + 0.1).toBeCloseTo(0.3);
+});
 
 describe('createPerson', () => {
   it('should create an instance of a person', () => {
